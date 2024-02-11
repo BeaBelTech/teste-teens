@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="stylesheet" href="Estilos/media-query.css">
+    <title>Orações</title>
+</head>
+<body>
+    <main>
+        <section id="tela"> <!-- login -> tela -->
+            <div id="img">
+                
+            </div>
+            <div id="form">
+                <h1>Caixinha de orações!</h1>
+                
+                <form action="https://formsubmit.co/intercessoresflame@gmail.com" method="POST" autocomplete="off">
+
+                    <!-- Nome -->
+                    <div class="campo">
+                        <label for="iname">Nome (Opcional)</label>
+                        <input type="text" name="name" id="iname" placeholder="Nome (Opcional)"/>
+                    </div>
+
+                    <!-- Número -->
+                    <div class="campo">
+                        <label for="inum">Número (Opcional)</label>
+                        <input type="num" name="num" id="inum" placeholder="Número (Opcional)"/>
+                    </div>
+
+                    
+                    <!-- Mensagem -->
+                    <div class="campo">
+                        <label for="imessage">Oração</label>
+                        <textarea name="message" id="imessage" placeholder="Oração"  required></textarea>
+                    </div>
+
+                    <!-- Enviar -->
+                    <input type="hidden" name="_next" value="http://beabeltech.github.io/obrigado.html"/>
+                    <button type="submit" id="enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
