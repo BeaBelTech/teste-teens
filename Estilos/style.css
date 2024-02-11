@@ -105,7 +105,7 @@ form > #enviar {
     background-color: #49a09d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 form > #enviar:hover {

@@ -25,9 +25,6 @@
         height: 0;
     }
 
-
-    
-    
     div#form > h1 {
         font-size: 2em;
         margin-block: 50px;
@@ -47,58 +44,43 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     main {
-       
-        background: #5f2c82 url(../img/Teens.png);
+        background: #5f2c82 url(../img/Teens\ translucent.png);
         background-size: cover;
         background-position: center center;
 
-        padding: 20px;
+     
         width: 100vw;
         height: 100vh;
         color: white;
+        overflow: hidden;
 
     }
-
+    section#tela  {
+        width: 60vw;
+        height: 50vh;
+        background: none;
+        box-shadow: none;
+    }
+    section#tela > div#img {
+        background: none;  
+        height: 0;
+    }
+    
     div#form > h1 {
         font-size: 2.5em;
         margin-block: 50px;
     }
-
-    .campo {
-        margin-block: 30px;
+    form > div.campo {
+        height: 45px;
     }
 
-    label {
-        font-weight: 500;
-        font-size: 1.6em;
-        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.437);
+    div.campo > input, textarea {
+        width: calc(100% - 0px);
     }
-
-    .campo > input {
-        position: relative;
-        margin-block: 12px;
-        padding: 10px;
-    }
-    .campo > input, textarea {
-        width: 55vw;
-        left: 7%;
-    }
-
-    textarea {
-        margin-block: 13px;
-        height: 20vh;
-        position: relative;
-    }
-
-    button {
-        left: 7%;
-        width: 18vw;
-        text-align: center;
-        height: 4vh;
-        font-size: 1.2em;
-        padding: 7px;
-        position: relative;
-        
+    form > div.campo {
+        background: none;
+        border: none;
+        margin: 15px 0px;
     }
 
 }
@@ -122,17 +104,28 @@
         float: right;
         width: 70%;
     }
+    div#form > h1 {
+        font-size: 1.6em; 
+        
+    }
+    div.campo > input, textarea {
+        width: 100%;
+    }
+    
+    form > div.campo {
+        margin: 15px 0px;
+    }
     
 }
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1900px){
     body {
         background-image: linear-gradient(to top, #111d60, #5f2c82);
     }
     section#tela {
-        width: 950px;
-        height: 350px;
+        width: 970px;
+        height: 500px;
     }
     section#tela > div#img {
         float: right;
@@ -144,11 +137,39 @@
         width: 50%;
     }
     div#form > h1 {
-        font-size: 2em;
+        font-size: 2em; 
+        margin-block: 32px;
     }
-    div#form > p {
-        font-size: 1em;
-        margin: 20px 0px;
+    form > div.campo {
+        height: 50px;
     }
+    div.campo > input, textarea {
+        width: 100%;
+    }
+    form > div.campo {
+        margin: 15px 0px;
+    }
+}
+
+
+@media screen and (min-width: 1900px) {
+
+    body {
+        background-image: linear-gradient(to top, #111d60, #5f2c82);
+    }
+
+   
     
+    section#tela {
+        background: none;
+        box-shadow: none;
+        display: flex;
+    }
+    section#tela > div#img {
+        background: none;
+        flex: 1;
+    }
+    section#tela > div#form {
+        flex: 1;
+    }
 }
