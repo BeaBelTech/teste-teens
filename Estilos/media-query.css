@@ -17,7 +17,7 @@
     section#tela  {
         width: 60vw;
         height: 50vh;
-        background: none;
+        background-color: rgba(0, 0, 0, 0.335);
         box-shadow: none;
     }
     section#tela > div#img {
@@ -56,9 +56,10 @@
 
     }
     section#tela  {
+       
         width: 60vw;
         height: 50vh;
-        background: none;
+        background-color: rgba(0, 0, 0, 0.335);
         box-shadow: none;
     }
     section#tela > div#img {
@@ -153,23 +154,40 @@
 
 
 @media screen and (min-width: 1900px) {
-
     body {
         background-image: linear-gradient(to top, #111d60, #5f2c82);
     }
-
-   
-    
     section#tela {
-        background: none;
-        box-shadow: none;
-        display: flex;
+        /* background:; */
+        width: 1500px;
+        height: 700px;
     }
     section#tela > div#img {
-        background: none;
-        flex: 1;
+        
+        float: right;
+        width: 50%;
+        height: 100%;
     }
     section#tela > div#form {
-        flex: 1;
+    
+        float: left;
+        width: 50%;
     }
+    div#form > h1 {
+        font-size: 2.3em; 
+        margin-block: 40px;
+    }
+    form > div.campo {
+        height: 70px;
+        margin: 20px 0px;
+    }
+   
+    div.campo > input, textarea {
+        width: 100%;
+    }
+    
+    form > #enviar {
+        height: 50px;
+    }
+  
 }
